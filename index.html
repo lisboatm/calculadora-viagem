@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Gastos de Viagem</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora de Gastos de Viagem</h2>
+        <form id="calcForm">
+            <div class="form-group">
+                <label for="distance">Distância (em km):</label>
+                <input type="number" id="distance" name="distance" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fuelPrice">Preço do combustível (por litro):</label>
+                <input type="number" id="fuelPrice" name="fuelPrice" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fuelConsumption">Consumo médio de combustível (em km/l):</label>
+                <input type="number" id="fuelConsumption" name="fuelConsumption" required>
+            </div>
+
+            <div class="form-group">
+                <label for="totalCost">Custo total da viagem:</label>
+                <input type="text" id="totalCost" name="totalCost" readonly>
+            </div>
+
+            <button type="button" class="btn" onclick="calculateCost()">Calcular</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
